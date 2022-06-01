@@ -2,7 +2,7 @@
 
 Node Red es una plataforma basada en JavaScript, es una herramienta de programación que conecta varios dispositivos a la vez, tanto de hardware como de servicios de internet. Se trata de un motor de flujos que cuenta con un enfoque IoT y esta condición permite definir flujos de servicios a través de protocolos como MQTT.
 
-![Untitled](Node%20RED%205d2fc6e754e64b708c8dbe4afd84950c/Untitled.png)
+![Imagen](Node%20RED/Imagen.png)
 
 **¿Qué es un objeto?**
 
@@ -26,7 +26,7 @@ time: "2004-09-23 10:42",
 city: "Los Angeles"
 }
 
-![Untitled](Node%20RED%205d2fc6e754e64b708c8dbe4afd84950c/Untitled%201.png)
+![Imagen1](Node%20RED/Imagen1.png)
 
 Para acceder a un valor deberemos navegar a través del objeto hasta llegar al valor que queremos:
 
@@ -38,7 +38,7 @@ Para acceder a un valor deberemos navegar a través del objeto hasta llegar al v
 
 Para crear esta red empezamos creando un node *mqtt* que tiene como parámetros de entrada la información necesaria para conectarse con TTN y obtener la información enviada por Lora.
 
-![Untitled](Node%20RED%205d2fc6e754e64b708c8dbe4afd84950c/Untitled%202.png)
+![Imagen2](Node%20RED/Imagen2.png)
 
 TTN genera un objeto con cada mensaje recibido de lora, como se puede ver a continuación:
 
@@ -193,7 +193,7 @@ El método get es el mismo que se utiliza para las páginas web podemos dividir 
 <https://example.com/?product=shirt&color=blue&newuser&size=m>
 ```
 
-![Untitled](Node%20RED%205d2fc6e754e64b708c8dbe4afd84950c/Untitled%203.png)
+![Imagen3](Node%20RED/Imagen3.png)
 
 Nosotros necesitaremos crear una URL como esa para que los datos lleguen al servidor.
 Como la primera parte (servidor) es siempre la misma solo crearemos la parte de los parámetros:
@@ -217,8 +217,8 @@ return msg
 
 El servidor se especifica en la parte de URL de la configuración del request node.
 
-![Untitled](Node%20RED%205d2fc6e754e64b708c8dbe4afd84950c/Untitled%204.png)
+![Imagen4](Node%20RED/Imagen4.png)
 
 El diagrama final de Node RED para la estación VP2:
 
-![Untitled](Node%20RED%205d2fc6e754e64b708c8dbe4afd84950c/Untitled%205.png)
+![Imagen5](Node%20RED/Imagen5.png)
